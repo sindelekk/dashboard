@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+}
+
+header {
+    background-color: blue;
+}
+
+sidebar {
+    background-color: red;
+    display: grid;
+    grid-row: 1 / 4;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "project project project announcement"
+        "project project project announcement"
+        "project project project trending"
+        "project project project trending";
+    
+    background-color: yellow;
+}
+
+.main_project {
+    display: grid;
+    grid-area: project;
+    
+
+}
+
+.main_p {
+    grid-row: 1 / 1;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    grid-row: 2 / 4;
+    align-items: center;
+    justify-items: center;
+
+    gap: 10px;
+    padding: 10px;
+    
+
+    
+}
+
+.cards, .cards_ann, .cards_trend {
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+.announcements {
+    display: grid;
+    grid-area: announcement;
+
+    gap: 10px;
+    padding: 10px;
+}
+
+.trending {
+    display: grid;
+    grid-area: trending;
+
+    gap: 10px;
+    padding: 10px;
+}
+
+footer {
+    background-color: green;
+    display: grid;
+    grid-column: 1 / 3;
+}

@@ -10,24 +10,54 @@
 <body>
     <header>
         <div class="nav">
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <input type="text" placeholder="Search...">
+            <div class="nav_upper">
+                <div class="search_bar">
+                    <img src="./icons/magnify.png">
+                    <input type="text">
+                </div>
+                <div class="nav_alert">
+                    <img src="./icons/bell-alert.png" alt="alert">
+                    <img src="./icons/apple-finder.png">
+                    <p>Marco Polo</p>
+                </div>
+            </div>
+            <div class="nav_bar">
+                <span class="nav_hello">
+                    <img src="./icons/apple-big.png">
+                    <p>Hello there,<br>
+                    <b>Marco Polo (@waterpolo)</b></p>
+                </span>
+                <div class="nav_bubble">
+                    <span class="nav_a">
+                    <a class="active" href="#new">New</a>
+                    </span>
+                    <span class="nav_a">
+                    <a href="#upload">Upload</a>
+                    </span>
+                    <span class="nav_a">
+                    <a href="#share">Share</a>
+                    </span> 
+                </div>
+            </div>
         </div>
     </header>
     <sidebar>
         <div class="menu">
+            <ul class="page">
+                <li><img src="./icons/view-dashboard.png"><h3>Dashboard</h3></li>
+                <li></li>
+                <li><img class="li_img" src="./icons/home.png">Home</li>
+                <li><img class="li_img" src="./icons/account-box-outline.png">Profile</li>
+                <li><img class="li_img" src="./icons/message-reply-outline.png">Messages</li>
+                <li><img class="li_img" src="./icons/history.png">History</li>
+                <li><img class="li_img" src="./icons/calendar-check.png">Tasks</li>
+                <li><img class="li_img" src="./icons/account-group.png">Communities</li>
+            </ul>
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li></li>
+                <li><img class="li_img" src="./icons/cog.png">Settings</li>
+                <li><img class="li_img" src="./icons/help-box.png">Support</li>
+                <li><img class="li_img" src="./icons/safe-square-outline.png">Privacy</li>
             </ul>
         </div>
     </sidebar>
@@ -69,8 +99,9 @@
                     </div>
             </div>
         </div>
+            <div class="main_announcement">
+                <div class="announcement_p"><h4>Announcements</h4></div>
                 <div class="announcements">
-                    <H4 class="main_p">Announcements</h4>
                     <div class="cards_ann">
                         <p class="title">Site Maintenance</p>
                         <p> asdas adsas asd asd sa da f f a d asd  ad sadasdasdsad asd</p>
@@ -84,8 +115,10 @@
                         <p> asdas adsas asd asd sa da f f a d asd  ad sadasdasdsad asd</p>
                     </div>
                 </div>
+            </div>
+            <div class="main_trending">
+                <h4 class="trending_p">Trending</h4>
                 <div class="trending">
-                    <h4 class="main_p">Trending</h4>
                     <div class="cards_trend">
                         <p class="title">@teagen</p>
                         <p> asdas adsas asd asd sa da f f a d asd  ad sadasdasdsad asd</p>
@@ -99,7 +132,8 @@
                         <p> asdas adsas asd asd sa da f f a d asd  ad sadasdasdsad asd</p>
                     </div>
                 </div>
+            </div>
     </main>
-    <footer>4</footer>
+    <footer>Copyright 2022 @sindelek</footer>
 </body>
 </html>
